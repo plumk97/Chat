@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68A595B01B170A960024B9F7 /* MQEncodeAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A595AF1B170A960024B9F7 /* MQEncodeAudio.m */; };
+		68A595C61B170C460024B9F7 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A595BE1B170C460024B9F7 /* libopencore-amrnb.a */; };
+		68A595C71B170C460024B9F7 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A595BF1B170C460024B9F7 /* libopencore-amrwb.a */; };
+		68D8EE701B156BD700BD1B0B /* libMQEncodeAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D8EE641B156BD700BD1B0B /* libMQEncodeAudio.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68D8EE711B156BD700BD1B0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68D8EE5C1B156BD700BD1B0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68D8EE631B156BD700BD1B0B;
+			remoteInfo = MQEncodeAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68D8EE621B156BD700BD1B0B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		68A595AE1B170A960024B9F7 /* MQEncodeAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQEncodeAudio.h; sourceTree = "<group>"; };
+		68A595AF1B170A960024B9F7 /* MQEncodeAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQEncodeAudio.m; sourceTree = "<group>"; };
+		68A595BE1B170C460024B9F7 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		68A595BF1B170C460024B9F7 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		68A595C11B170C460024B9F7 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		68A595C21B170C460024B9F7 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		68A595C41B170C460024B9F7 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		68A595C51B170C460024B9F7 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		68D8EE641B156BD700BD1B0B /* libMQEncodeAudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMQEncodeAudio.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D8EE6F1B156BD700BD1B0B /* MQEncodeAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQEncodeAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D8EE751B156BD700BD1B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68D8EE611B156BD700BD1B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A595C71B170C460024B9F7 /* libopencore-amrwb.a in Frameworks */,
+				68A595C61B170C460024B9F7 /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D8EE6C1B156BD700BD1B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D8EE701B156BD700BD1B0B /* libMQEncodeAudio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68A595BD1B170C460024B9F7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				68A595BE1B170C460024B9F7 /* libopencore-amrnb.a */,
+				68A595BF1B170C460024B9F7 /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		68A595C01B170C460024B9F7 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				68A595C11B170C460024B9F7 /* interf_dec.h */,
+				68A595C21B170C460024B9F7 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		68A595C31B170C460024B9F7 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				68A595C41B170C460024B9F7 /* dec_if.h */,
+				68A595C51B170C460024B9F7 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		68D8EE5B1B156BD700BD1B0B = {
+			isa = PBXGroup;
+			children = (
+				68D8EE661B156BD700BD1B0B /* MQEncodeAudio */,
+				68D8EE731B156BD700BD1B0B /* MQEncodeAudioTests */,
+				68D8EE651B156BD700BD1B0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68D8EE651B156BD700BD1B0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68D8EE641B156BD700BD1B0B /* libMQEncodeAudio.a */,
+				68D8EE6F1B156BD700BD1B0B /* MQEncodeAudioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68D8EE661B156BD700BD1B0B /* MQEncodeAudio */ = {
+			isa = PBXGroup;
+			children = (
+				68A595BD1B170C460024B9F7 /* lib */,
+				68A595C01B170C460024B9F7 /* opencore-amrnb */,
+				68A595C31B170C460024B9F7 /* opencore-amrwb */,
+				68A595AE1B170A960024B9F7 /* MQEncodeAudio.h */,
+				68A595AF1B170A960024B9F7 /* MQEncodeAudio.m */,
+			);
+			path = MQEncodeAudio;
+			sourceTree = "<group>";
+		};
+		68D8EE731B156BD700BD1B0B /* MQEncodeAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				68D8EE741B156BD700BD1B0B /* Supporting Files */,
+			);
+			path = MQEncodeAudioTests;
+			sourceTree = "<group>";
+		};
+		68D8EE741B156BD700BD1B0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68D8EE751B156BD700BD1B0B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68D8EE631B156BD700BD1B0B /* MQEncodeAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D8EE781B156BD700BD1B0B /* Build configuration list for PBXNativeTarget "MQEncodeAudio" */;
+			buildPhases = (
+				68D8EE601B156BD700BD1B0B /* Sources */,
+				68D8EE611B156BD700BD1B0B /* Frameworks */,
+				68D8EE621B156BD700BD1B0B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQEncodeAudio;
+			productName = MQEncodeAudio;
+			productReference = 68D8EE641B156BD700BD1B0B /* libMQEncodeAudio.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		68D8EE6E1B156BD700BD1B0B /* MQEncodeAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68D8EE7B1B156BD700BD1B0B /* Build configuration list for PBXNativeTarget "MQEncodeAudioTests" */;
+			buildPhases = (
+				68D8EE6B1B156BD700BD1B0B /* Sources */,
+				68D8EE6C1B156BD700BD1B0B /* Frameworks */,
+				68D8EE6D1B156BD700BD1B0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68D8EE721B156BD700BD1B0B /* PBXTargetDependency */,
+			);
+			name = MQEncodeAudioTests;
+			productName = MQEncodeAudioTests;
+			productReference = 68D8EE6F1B156BD700BD1B0B /* MQEncodeAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68D8EE5C1B156BD700BD1B0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "李铁柱";
+				TargetAttributes = {
+					68D8EE631B156BD700BD1B0B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					68D8EE6E1B156BD700BD1B0B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 68D8EE5F1B156BD700BD1B0B /* Build configuration list for PBXProject "MQEncodeAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68D8EE5B1B156BD700BD1B0B;
+			productRefGroup = 68D8EE651B156BD700BD1B0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68D8EE631B156BD700BD1B0B /* MQEncodeAudio */,
+				68D8EE6E1B156BD700BD1B0B /* MQEncodeAudioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68D8EE6D1B156BD700BD1B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68D8EE601B156BD700BD1B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A595B01B170A960024B9F7 /* MQEncodeAudio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D8EE6B1B156BD700BD1B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68D8EE721B156BD700BD1B0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68D8EE631B156BD700BD1B0B /* MQEncodeAudio */;
+			targetProxy = 68D8EE711B156BD700BD1B0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68D8EE761B156BD700BD1B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68D8EE771B156BD700BD1B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68D8EE791B156BD700BD1B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MQEncodeAudio/lib",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		68D8EE7A1B156BD700BD1B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MQEncodeAudio/lib",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		68D8EE7C1B156BD700BD1B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MQEncodeAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68D8EE7D1B156BD700BD1B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MQEncodeAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68D8EE5F1B156BD700BD1B0B /* Build configuration list for PBXProject "MQEncodeAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D8EE761B156BD700BD1B0B /* Debug */,
+				68D8EE771B156BD700BD1B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D8EE781B156BD700BD1B0B /* Build configuration list for PBXNativeTarget "MQEncodeAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D8EE791B156BD700BD1B0B /* Debug */,
+				68D8EE7A1B156BD700BD1B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68D8EE7B1B156BD700BD1B0B /* Build configuration list for PBXNativeTarget "MQEncodeAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D8EE7C1B156BD700BD1B0B /* Debug */,
+				68D8EE7D1B156BD700BD1B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68D8EE5C1B156BD700BD1B0B /* Project object */;
+}

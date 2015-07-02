@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.m
 //  Chat
 //
@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+Chat.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +19,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [MQChatManager sharedInstance].managedObjectContext = self.managedObjectContext;
+    [MQChatManager sharedInstance].managedObjectModel = self.managedObjectModel;
+    [MQChatManager sharedInstance].persistentStoreCoordinator = self.persistentStoreCoordinator;
+    [[MQChatManager sharedInstance] connectionChatServer];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:24 / 255.0 green:167 / 255.0 blue:220 / 255.0 alpha:1]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
+    [self chatApplication:application didFinishLaunchingWithOptions:launchOptions];
+    
     return YES;
 }
 
@@ -28,10 +44,15 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[UIApplication sharedApplication] setKeepAliveTimeout:600 handler:^{ //todo send keep live
+        
+        NSLog(@"fff");
+    }];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [[UIApplication sharedApplication] clearKeepAliveTimeout];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

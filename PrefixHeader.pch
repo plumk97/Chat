@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  Chat
+//
+//  Created by 货道网 on 15/5/4.
+//  Copyright (c) 2015年 李铁柱. All rights reserved.
+//
+
+#ifndef Chat_PrefixHeader_pch
+#define Chat_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Request.h"
+#import "GlobalMethod.h"
+
+
+#ifdef DEBUG
+#define NSLog(format, ...) NSLog((@"%@:%d -> " format), [[[NSString alloc] initWithFormat:@"%s",__FILE__] lastPathComponent], __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+#endif
