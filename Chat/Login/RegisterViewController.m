@@ -20,6 +20,7 @@
 }
 - (IBAction)itemClick:(id)sender {
     
+    [self.view endEditing:YES];
     __weak typeof(self) weakSelf = self;
     [weakSelf.view showLoadAnimation];
     [[MQChatManager sharedInstance] regeisterWithUsername:self.usernameTextField.text Password:self.passwordTextField.text Completion:^(NSError *error) {

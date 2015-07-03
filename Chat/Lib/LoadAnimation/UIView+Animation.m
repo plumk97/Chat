@@ -100,10 +100,8 @@
     [view addSubview:tips];
     objc_setAssociatedObject(view, "mqtipsview", tips, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    
 }
-- (void)hideTips
-{
+- (void)hideTips {
     UIView * view = [self isKindOfClass:[UIWindow class]] ? self : self.window;
     MQTipsView * tips = objc_getAssociatedObject(view, "mqtipsview");
     if (tips) {

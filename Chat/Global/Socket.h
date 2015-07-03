@@ -41,18 +41,14 @@ typedef enum : NSUInteger {
 <AsyncSocketDelegate>
 {
     AsyncSocket * _socket;
-  
     NSMutableArray * _delegates; // 所有代理
-    
     NSInteger currentSendTag; // 当前发送tag
-    
     NSMutableDictionary * currentSendDict; // 发送缓存字典 发送成功 或 失败 删除缓存数据
 }
 
 
 
 // MARK: - 实例方法
-
 
 /**
  *  连接socket服务器

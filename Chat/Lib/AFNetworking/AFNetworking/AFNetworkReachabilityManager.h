@@ -29,6 +29,7 @@
 #import <ifaddrs.h>
 #import <netdb.h>
 
+
 typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
     AFNetworkReachabilityStatusUnknown          = -1,
     AFNetworkReachabilityStatusNotReachable     = 0,

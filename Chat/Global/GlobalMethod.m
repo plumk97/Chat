@@ -10,9 +10,6 @@
 
 static GlobalMethod * gl = nil;
 
-
-
-
 @implementation GlobalMethod
 
 + (GlobalMethod *)sharedGlobalMethod
@@ -29,8 +26,6 @@ static GlobalMethod * gl = nil;
 {
     self = [super init];
     if (self) {
-
-    
     }
     return self;
 }
@@ -41,8 +36,6 @@ static GlobalMethod * gl = nil;
     
     window.rootViewController = viewCotnroller;
 }
-
-
 
 /**
  *  获取storyboard
@@ -56,17 +49,6 @@ static GlobalMethod * gl = nil;
     UIViewController * vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:_id];
     return vc;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 @end

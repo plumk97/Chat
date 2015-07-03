@@ -13,7 +13,6 @@
  */
 @interface Chat_MoreOperationView : UIView
 
-
 - (void)setDidSelectItemIndex:(void (^) (NSInteger))block;
 
 @end

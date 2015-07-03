@@ -11,8 +11,8 @@
 @implementation Datagram
 
 
-+ (NSData *)codingDictonary:(NSDictionary *)dict
-{
++ (NSData *)codingDictonary:(NSDictionary *)dict {
+    
     NSMutableData * jsonData = [[NSMutableData alloc] initWithData:[NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:nil]];
     NSString * str = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     str = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -25,17 +25,13 @@
 
     [jsonData setData:[NSData dataWithBytes:header length:4]];
     
-//
     [jsonData appendData:[str dataUsingEncoding:NSUTF8StringEncoding]];
 
     return jsonData;
 }
 
-+ (NSDictionary *)decodingData:(NSData *)data
-{
++ (NSDictionary *)decodingData:(NSData *)data {
     NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    
-    
     return dict;
 }
 

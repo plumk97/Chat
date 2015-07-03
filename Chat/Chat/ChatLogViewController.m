@@ -33,7 +33,6 @@
             NSLog(@"%@", [result domain]);
             return ;
         }
-        
         // 删除这个会话的所有记录 加入从服务器获取的
         
         NSFetchRequest * request = [[NSFetchRequest alloc] initWithEntityName:@"Message"];
@@ -53,10 +52,7 @@
         id list = [result.userInfo objectForKey:@"list"];
         if (list && [list isKindOfClass:[NSArray class]]) {
             for (NSDictionary * dict in list) {
-                
                 [Message messageWithDict:dict Session:[MQChatManager sharedInstance].currentSession];
-            
-  
             }
         }
         

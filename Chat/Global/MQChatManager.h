@@ -214,7 +214,6 @@ typedef enum : NSUInteger {
  */
 - (void)endVoiceChat;
 
-
 /**
  *  开启实时语音
  *
@@ -244,7 +243,6 @@ typedef enum : NSUInteger {
  *  @return session
  */
 + (Session *)sessionForUserName:(NSString *)username Default:(BOOL)isDefault;
-
 
 /**
  *  插入时间到一个信息数组

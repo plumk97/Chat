@@ -14,8 +14,6 @@
 #define INTERVAL_BUBBLE_HEIGHT 8
 #define INTERVAL_BUBBLE_WIDTH 11
 
-
-
 typedef enum : NSUInteger {
     BubblePressType_Press,
     BubblePressType_LongPress,

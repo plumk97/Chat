@@ -65,14 +65,12 @@
     _progressLayer.path = bezierPath.CGPath;
 }
 
-- (void)setTrackColor:(UIColor *)trackColor
-{
+- (void)setTrackColor:(UIColor *)trackColor {
     _trackColor = trackColor;
-    _trackLayer.strokeColor = trackColor.CGColor;;
+    _trackLayer.strokeColor = trackColor.CGColor;
 }
 
-- (void)setProgressColor:(UIColor *)progressColor
-{
+- (void)setProgressColor:(UIColor *)progressColor {
     _progressColor = progressColor;
     _progressLayer.strokeColor = progressColor.CGColor;
 }
