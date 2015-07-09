@@ -82,8 +82,6 @@ typedef void (^ComplectionBlock) (NSError *);
           
           _socket = [[Socket alloc] init];
           [_socket addDelegate:self];
-     
-          
           
           __weak typeof(self) weakSelf = self;
           [[AFNetworkReachabilityManager sharedManager] startMonitoring];

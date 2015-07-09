@@ -148,6 +148,7 @@
     if (_socket.isConnected || isConnecting) {
         return;
     }
+#warning 这里有个BUG 会导致carsh
 //    [_socket disconnectAfterReadingAndWriting];
 
     NSError * error;
